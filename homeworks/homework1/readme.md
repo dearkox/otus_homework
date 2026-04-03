@@ -6,8 +6,13 @@
 6. В папке `H:\www\OTUS\cc675955.tw1.ru` выполнил `git init`.
 7. Привязал удалённый репозиторий: `git remote add origin git@github.com:dearkox/otus_homework.git`.
 8. Создал `.gitignore` с правилом игнорирования всего, кроме папки `homeworks/` и самого `.gitignore`.
-9. Создал папку `homeworks/homework3/` и файл `readme.md` (этот).
+9. Создал папку `homeworks/homework1/` и файл `readme.md` (этот).
 10. Выполнил `git add .`
 11. Переименовал ветку в `main`: `git branch -M main`
 12. Сделал коммит: `git commit -m "feat: инициализация структуры homeworks/"`
 13. Отправил на GitHub: `git push -u origin main`
+14. На timeweb в папке public_html/ выполнил `git init`
+15. Привязал через HTTPS удалённый репозиторий `git remote add origin https://github.com/dearkox/otus_homework.git`
+16. Создал в локальной папке `homeworks/homework1/index.php` добавил описание с домашней работой
+17. Сделал коммит и запушил
+18. На timeweb сделал `git pull origin main`
