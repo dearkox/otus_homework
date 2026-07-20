@@ -1,5 +1,3 @@
-// /local/js/sergeypr/workday/script.js
-
 (function() {
     'use strict';
 
