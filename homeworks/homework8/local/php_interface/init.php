@@ -13,4 +13,8 @@ if(file_exists($_SERVER['DOCUMENT_ROOT'] . '/local/lib/autoload.php')) {
 require_once $_SERVER['DOCUMENT_ROOT'] . '/local/php_interface/events.php';
 
 use Bitrix\Main\UI\Extension;
-Extension::load('sergeypr.workday');
+// Загружаем расширение ТОЛЬКО для публичной части (не для админки)
+// Может порушить админку из-за преждевременного старта сессии
+if (!defined('ADMIN_SECTION') || ADMIN_SECTION !== true) {
+    Extension::load('sergeypr.workday');
+}
