@@ -35,22 +35,11 @@ return [
      *
      */
 
-    /**
-     * Вариант фильтрации для тестирования
-     */
     'filters' => [
         'direction' => 0,
         'providers' => ['CRM_TODO'],
     ],
 
-    /**
-     * ОВариант фильтрации по ЗАДАЧЕ
-     * Раскомментировать и закомментировать блок выше
-     */
-    // 'filters' => [
-    //     'direction' => 1,
-    //     'providers' => ['VOIP', 'CRM_EMAIL', 'IMOPENLINES_PROVIDER'],
-    // ],
 
 
 ];

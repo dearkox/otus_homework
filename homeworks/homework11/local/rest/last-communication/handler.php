@@ -51,27 +51,9 @@ if (!$activity) {
     die('Activity not found in CRM');
 }
 
-/**
- * Фильтрация по направлению и провайдеру.
- *
- * ВАРИАНТ 1: Боевой (только входящие коммуникации).
- * - DIRECTION = 1 (входящее)
- * - PROVIDER_ID = VOIP, CRM_EMAIL, IMOPENLINES_PROVIDER
- */
-/*
-$direction = isset($activity['DIRECTION']) ? (int)$activity['DIRECTION'] : 0;
-$providerId = $activity['PROVIDER_ID'] ?? '';
-
-$allowedProviders = $settings['filters']['providers'] ?? ['VOIP', 'CRM_EMAIL', 'IMOPENLINES_PROVIDER'];
-$targetDirection = $settings['filters']['direction'] ?? 1;
-
-if ($direction !== $targetDirection || !in_array($providerId, $allowedProviders, true)) {
-    die('Ignored: not a target client communication');
-}
-*/
 
 /**
- * ВАРИАНТ 2: Тестовый (пропускает CRM_TODO для проверки).
+ *  Фильтрация
  * direction = 0 — пропускает любые направления.
  * providers = VOIP, CRM_EMAIL, IMOPENLINES_PROVIDER, CRM_TODO.
  */
