@@ -1,0 +1,62 @@
+REST_NOTES:
+add вызван | Данные: Array
+(
+    [fields] => Array
+        (
+            [TITLE] => Про любовь
+            [TEXT] => Здраствуй REST, ещё быть может, в моей душе команда curl угасла не совсем
+        )
+
+)
+
+
+REST_NOTES:
+add успешно, ID: 2
+
+REST_NOTES:
+add вызван | Данные: Array
+(
+    [fields] => Array
+        (
+            [TITLE] => Надо бы сдать последнюю домашку
+            [TEXT] => И Добби будет свободен!
+        )
+
+)
+
+
+REST_NOTES:
+add успешно, ID: 3
+
+REST_NOTES:
+update вызван | Данные: Array
+(
+    [fields] => Array
+        (
+            [ID] => 1
+            [TITLE] => О как прекрасен этот мир
+            [TEXT] => О как прекрасен этот мир, смотри! Светлеет небо, гаснут фонари...А я сижу и плачу в тишине:В коде ошибка на второй строке.
+        )
+
+)
+
+
+REST_NOTES:
+update успешно, ID: 1
+
+REST_NOTES:
+list вызван
+
+REST_NOTES:
+list успешно, количество: 3
+
+REST_NOTES:
+get вызван | Данные: Array
+(
+    [id] => 2
+)
+
+
+REST_NOTES:
+get успешно, ID: 2
+
